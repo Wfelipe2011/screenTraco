@@ -2,7 +2,8 @@
     background-color: var(--cor-contraste-claro);
     border-radius: 10px;
     box-shadow: var(--sombra);
-    width: 100%;
+    width: 95%;
+    margin: auto;
     max-width: 45rem;
     padding: 1.75rem;
     box-sizing: border-box;
@@ -13,3 +14,4 @@
     font-size: var(--fonte-tamanho-cartao-titulo);
     margin-bottom: 1rem;
 }
+

@@ -5,7 +5,7 @@ function criarNovaLinha(name, email, cpf) {
   const linhaNovo = document.createElement("tr");
   const conteudo = `
      <td class="td" data-td>${name}</td>
-     <td>${email}</td>
+     <td class="email">${email}</td>
      <td>
          <ul class="tabela__botoes-controle">
              <li><a href="./edita_cliente.html?id=${cpf}" class="botao-simples botao-simples--editar">Editar</a></li>
