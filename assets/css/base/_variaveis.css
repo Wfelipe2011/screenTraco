@@ -13,10 +13,12 @@
     --fonte-tamanho-modal-titulo: 28px;
     --fonte-tamanho-modal-botao: 28px;
     
-    --cor-primaria: #0071ea;
-    --cor-secundaria: #d6eaff;
-    --cor-contraste-escuro: #4D4D4D;
-    --cor-contraste-claro: #fff;
+    --cor-primaria: #050a99aa;
+    --cor-secundaria: #050a9948;
+    --cor-contraste-escuro: #000000;
+    --cor-contraste-claro: rgba(250, 250, 250, 0.344);
+    --cor-menu: #050a99aa;
+    --cor-menu-text: #fff;
     --cor-aviso: #df2525;
     --cor-sucesso: #047900;
     --cor-transparencia: #4d4d4d33;

@@ -11,6 +11,6 @@ formulario.addEventListener("submit", (event) => {
   console.log(name, email, cpf)
   clienteService.criarCliente(name, email, cpf)// enviar os dados para funcao
   .then(()=>{
-      window.location.href = '../telas/cadastro_concluido.html'
+      window.location.href = '../cadastro_concluido.html'
   })// redirencionar a pessoa para outra pagina
 });
