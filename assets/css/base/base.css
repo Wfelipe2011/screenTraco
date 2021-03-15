@@ -26,6 +26,13 @@ body {
 	flex-direction: column;
 }
 
+@media(max-width: 500px) {
+	.container {
+		  width: 100%;
+	  }
+	}
+
+	
 @media(min-width: 800px) {
   .container {
 		padding-right: 2.5rem;

@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/menu.css">
     <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
     <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
     <link rel="stylesheet" href="../assets/css/cadastra_cliente.css">
@@ -16,10 +17,9 @@
 <body>
     <header class="cabecalho container">
         <img src="../assets/img/logo-tegra.png" alt="Logotipo Tegra" class="cabecalho__logo">
-        <nav>
-            <ul class="cabecalho__lista-navegacao">
-                <li class="cabecalho__link"><a href="#">Dashboard</a></li>
-                <li class="cabecalho__link"><a href="#">Produtos</a></li>
+        <nav class="menu">
+            <ul class="cabecalho__lista-navegacao menu_ul">
+
                 <li class="cabecalho__link"><a href="index.html">Clientes </a></li>
             </ul>
         </nav>
@@ -38,12 +38,19 @@
                     <label class="input-label" for="email">email</label>
                     <span class="input-mensagem-erro">Esse campo não pode ficar vazio</span>
                 </div>
+                <div class="input-container">
+                    <input name="cpf" id="cpf" class="input" type="number" placeholder="CPF" required data-cpf>
+                    <label class="input-label" for="cpf" >CPF</label>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
+                </div>
                 <button type="submit"class="botao">
                     Editar cliente
                 </button>
             </form>
         </section>
     </main>
-    
+    <script type="module" src="./controller/atualizaCliente-controller.js"></script>
 </body>
+
+
 </html>

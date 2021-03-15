@@ -67,4 +67,12 @@
 
 .td {
     padding: 1rem;
+    
+}
+
+tr:hover{
+    background-color: rgba(0, 255, 255, 0.207);
+    font-size: 20px;
+    font-family: bold;
+    cursor: pointer;
 }

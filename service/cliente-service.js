@@ -20,15 +20,52 @@ const criarCliente = (name, email, cpf) => {
     body: JSON.stringify({
       name: name,
       email: email,
-      cpf: cpf
+      cpf: cpf,
     }),
   }).then((resposta) => {
     return resposta.body;
   });
 };
 
+//========= DELETE ================
+const removeCliente = (cpf) => {
+  return fetch(`https://api-formulario.herokuapp.com/formulario/${cpf}`, {
+    method: "DELETE",
+  });
+};
+
+
+//=========== GET ID ==================
+const detalhaCliente = (cpf) => {
+  return fetch(`https://api-formulario.herokuapp.com/formulario/${cpf}`)
+  .then((resposta) => {
+    return resposta.json();
+  })
+}
+
+//========== PATCH ===================
+const atualizaCliente = (cpf, nome, email) => {
+    return fetch(`https://api-formulario.herokuapp.com/formulario/${cpf}`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type' : 'application/json'
+          },
+          body: JSON.stringify({
+            name: nome,
+            email: email,
+            cpf: cpf
+          })
+    } ).then( resposta => {
+      return resposta.json();
+    })
+  }
+
+
 //================= EXPORT =================
 export const clienteService = {
   listaClientes,
-  criarCliente
+  criarCliente,
+  removeCliente,
+  detalhaCliente,
+  atualizaCliente
 };
