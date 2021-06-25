@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    flex-direction: column;
+}
+
+a {
+    cursor: pointer;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.click:hover {
+    box-shadow: rgb(255 255 255 / 70%) 2px 3px 10px;
+} 
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+#spinner {
+    border: 8px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #22a6b3;
+    border-radius: 50%;
+    margin-top: 5vh;
+    width: 7vw;
+    height: 7vw;
+    animation: spin 1s linear infinite;
+}
+
+
