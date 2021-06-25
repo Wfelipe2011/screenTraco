@@ -56,7 +56,7 @@ export const ListaClienteComponent = () => {
         if (button === 'Editar') {
           AtualizaComponent(id)
         }
-        if (button === 'Novo Cliente') {
+        if (button === 'Novo') {
           CadastroComponent()
         }
       })

@@ -61,3 +61,14 @@ nav div a:hover {
         font-size: 2.5vw;
     }
 }
+
+@media(max-width: 420px) {
+    nav div a {
+        padding: 0;
+        margin-left: -70px;
+        font-size: 3.5vw;
+    }
+    nav img {
+        width: 20%;
+    }
+}

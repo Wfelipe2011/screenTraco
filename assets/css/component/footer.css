@@ -1,6 +1,6 @@
 footer {
     width: 99.2vw;
-    height: 29vh;
+    height: 51vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,6 +17,10 @@ footer div {
     justify-content: center;
     align-items: center;
    
+}
+
+footer div p {
+    padding: 10px;
 }
 
 .footer img {

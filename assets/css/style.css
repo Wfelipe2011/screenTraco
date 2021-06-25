@@ -35,4 +35,10 @@ a {
     animation: spin 1s linear infinite;
 }
 
+#piechart_3d {
+    width: 60vw;
+    height: 20vh;
+}
+
+
 

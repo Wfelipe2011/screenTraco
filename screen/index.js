@@ -2,7 +2,7 @@ const getCadastroHtml = () => {
   const main = document.getElementById('root')
   const dadosHtml = `
 <form id="formulario">
-        <h1>Novo Cliente</h1>
+        <h1>Novo</h1>
         <div>
           <label>Nome do Cliente</label><br />
           <input
@@ -82,7 +82,7 @@ const getListaClienteHtml = () => {
                 <th>Placa</th>
                 <th class="none">Tipo</th>
                 <th class="none">Observações</th>
-                <th><a class="btn-link">Novo Cliente</a></th>
+                <th><a class="btn-link">Novo</a></th>
               </tr>
             </table>
           </section>
@@ -251,7 +251,7 @@ const getFaturamentoHtml = () => {
           <tbody id="tbody"></tbody>
         </table>
         <div class="grafico">
-          <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+          <div id="piechart_3d"></div>
         </div>
         </section>
     `
