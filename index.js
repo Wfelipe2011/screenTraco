@@ -22,7 +22,7 @@ link.addEventListener('click', (event) => {
         case 'Cadastrar':
             CadastroComponent()
             break;
-        case "Listar Clientes":
+        case "Clientes":
             ListaClienteComponent()
             break;
         case 'Faturamento':

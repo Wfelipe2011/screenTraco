@@ -2,7 +2,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 10vh;
+    height: 8vh;
     width: 99.2vw;
 }
 
@@ -70,5 +70,11 @@ nav div a:hover {
     }
     nav img {
         width: 20%;
+    }
+}
+
+@media (max-height: 420px) {
+    nav {
+        height: 15vh;
     }
 }
